@@ -1,0 +1,30 @@
+:root {
+    --primary: #2C98F0;
+    --light: #ffffff;
+    --grey: #F2F3F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    width: calc(100% - 300px);
+    float: right;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 624px) {
+    #header {
+        width: auto;
+        float: none;
+    }
+    #content {
+        float: none;
+        width: 100%;
+        padding: 5px;
+        margin-top: 50px;
+    }
+}

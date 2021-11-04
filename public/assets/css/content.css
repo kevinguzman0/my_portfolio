@@ -16,6 +16,48 @@ a {
     transition: 0.5s;
 }
 
+.info-carousel {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    animation-name: opacity-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.carousel-item {
+    animation-name: opacity-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.title-home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+.title-home .download-cv {
+    color: #000;
+    border: 1px solid #000;
+    background: transparent !important;
+    transition: all 0.5s;
+}
+.title-home .download-cv:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
 @media only screen and (max-width: 624px) {
     #header {
         width: auto;

@@ -13,7 +13,7 @@ a {
     float: left;
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 0; */
     bottom: 0;
     z-index: 9997;
     transition: all 0.5s;
@@ -59,8 +59,8 @@ a {
     color: #2C98F0;
     background-size: auto 2px;
 }
-.menu a:focus {
-    background-size: auto 2px;
+.menu a::after {
+    background-size: auto 2px !important;
     color: #2C98F0 !important;
 }
 

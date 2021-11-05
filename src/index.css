@@ -9,3 +9,7 @@ body {
     font-weight: 300;
     color: var(--primary)
 }
+#container-wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}

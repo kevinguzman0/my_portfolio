@@ -1,8 +1,8 @@
-import blanco from "../../img/blanco.jpg";
+import blanco from "../../img/blanco.webp";
 import CarouselItem from './CarouselItem'
 const HomeCarousel = () => {
     return (
-        <div>
+        <div id="content-home">
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <CarouselItem active="active" src={blanco} >

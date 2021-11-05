@@ -17,12 +17,10 @@ function Navbar({ open }) {
                 <h6><a href="https://bootcamp.learn.utoronto.ca/blog/what-is-a-full-stack-developer/" target="blank">Full Stack Developer</a> in Colombia</h6>
             </div>
             <div className="menu">
-                <ItemsMenu class={stylesItem} href="#1">Home</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#2">About</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#3">Services</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#4">Skills</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#5">Experience</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#6">Work</ItemsMenu>
+                <ItemsMenu class={stylesItem} to={`#content-home`}>Home</ItemsMenu>
+                <ItemsMenu class={stylesItem} to={`#content-about`}>About</ItemsMenu>
+                <ItemsMenu class={stylesItem} to={`#content-skills`}>Skills</ItemsMenu>
+                <ItemsMenu class={stylesItem} href="#6">Projects</ItemsMenu>
                 <ItemsMenu class={stylesItem} href="#7">Contact</ItemsMenu>
             </div>
             <FooterNav />

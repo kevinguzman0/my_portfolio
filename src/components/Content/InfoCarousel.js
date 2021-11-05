@@ -1,7 +1,7 @@
 const InfoCarousel = ({children, ...props}) => {
     return (
-        <div className="info-carousel">
-            <div className="title-home">
+        <div className="info-carousel" >
+            <div className="title-home animate__animated animate__fadeInUp animate__slow">
                 {children}
                 <p>
                     <a href="#1" className="btn btn-primary download-cv">Download CV</a>

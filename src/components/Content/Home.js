@@ -1,6 +1,6 @@
 import blanco from "../../img/blanco.webp";
 import CarouselItem from './CarouselItem'
-const HomeCarousel = () => {
+const Home = () => {
     return (
         <div id="content-home">
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
@@ -16,4 +16,4 @@ const HomeCarousel = () => {
         </div>
     )
 }
-export default HomeCarousel
+export default Home

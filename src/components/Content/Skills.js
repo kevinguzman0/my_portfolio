@@ -10,7 +10,7 @@ const Skills = () => {
                 p="The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
             >
             </InformationBasic>
-            <div className="row wow animate__animated animate__fadeInUp animate__slow">
+            <div className="row wow animate__animated animate__fadeInRight animate__slow">
                 <BarraSkills
                     skill='HTML5'
                     porcentaje='80%'

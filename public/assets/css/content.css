@@ -53,9 +53,11 @@ a {
     padding: 0 2.5em;
     line-height: 1.8rem;
 }
+
 .desc-about {
     margin-top: 65px;
 }
+
 .title-about {
     margin-bottom: 15px;
     display: block;
@@ -90,8 +92,8 @@ a {
 }
 
 .box-one:hover {
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .color-blue {
@@ -140,15 +142,158 @@ a {
 .services p {
     font-size: 0.8rem;
 }
+
 .progress-skills {
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
 .progress-skills h4 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
+.content-box-project {
+    transition: all 1s ease;
+}
+
+.box-project {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* height: 300px; */
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.box-project .desc {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2c98f0;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box-project:hover .desc {
+    opacity: 1;
+}
+
+.box-project .desc .con {
+    padding: 20px;
+    display: block;
+    position: relative;
+    height: 300px;
+}
+
+.box-project:hover .desc h3 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.box-project .desc a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.box-project .desc h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+
+.box-project:hover .desc span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.box-project .desc span {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 15px, 0);
+}
+
+.content-contact .form-group {
+    margin-bottom: 15px;
+}
+
+.content-contact .form-control {
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    background: #F2F3F7;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    border-radius: 0;
+    padding: 10px 20px;
+    line-height: 1.42857;
+    color: #555;
+}
+
+.content-contact #message {
+    height: 130px;
+}
+
+.content-contact .btn-primary {
+    background: #2C98F0;
+    color: #fff;
+    border: 2px solid #2C98F0;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 15px !important;
+    transition: all 1s ease;
+}
+
+.content-contact .btn-primary:hover {
+    background: #58A6E5;
+    border: 2px solid #58A6E5;
+}
+
+.content-contact .alert-form {
+    background: #C7F589;
+    color: #fff;
+    border: 2px solid #C7F589;
+    margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 @media only screen and (max-width: 624px) {
     #header {
@@ -160,5 +305,11 @@ a {
         width: 100%;
         padding: 5px;
         margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .content-box-project {
+        width: 100% !important;
     }
 }

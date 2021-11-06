@@ -20,8 +20,8 @@ function Navbar({ open }) {
                 <ItemsMenu class={stylesItem} to={`#content-home`}>Home</ItemsMenu>
                 <ItemsMenu class={stylesItem} to={`#content-about`}>About</ItemsMenu>
                 <ItemsMenu class={stylesItem} to={`#content-skills`}>Skills</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#6">Projects</ItemsMenu>
-                <ItemsMenu class={stylesItem} href="#7">Contact</ItemsMenu>
+                <ItemsMenu class={stylesItem} to={`#content-projects`}>Projects</ItemsMenu>
+                <ItemsMenu class={stylesItem} to={`#content-contact`}>Contact</ItemsMenu>
             </div>
             <FooterNav />
         </NavbarWrapper>

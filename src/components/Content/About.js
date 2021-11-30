@@ -4,9 +4,9 @@ const About = () => {
     return (
         <div>
             <InformationBasic 
-                span='About Us'
+                span='About Me'
                 h2='Who Am I?'
-                p="Hi I'm Kevin Guzman On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word 'and' and the Little Blind Text should turn around and return to its own, safe country."
+                p="I was born in Bogota-Colombia, I characterize myself for being responsable, efficent and working as a team, I'm also a person who spends his time, studying, exercising and looking for new things to learn. I have worked on several projects with various technologies, now I want to focus on full stack development with Javascript."
                 >
             </InformationBasic>
             

@@ -1,8 +1,7 @@
 import InformationBasic from './InformationBasic'
 import BoxProject from './BoxProject'
-import globo from "../../img/globo.jpg";
-import world from "../../img/world.jpg";
-import world2 from "../../img/world2.jpg";
+
+import sendme from "../../img/sendme.png";
 
 const Projects = () => {
     return (
@@ -14,23 +13,13 @@ const Projects = () => {
             </InformationBasic>
             <div className="row wow animate__animated animate__fadeInUp animate__slow">
                 <BoxProject 
-                    image = {globo}
-                    link = 'https://animate.style/'
-                    title = 'Work 01'
-                    desc = 'Proyecto realizado en node js con react'
-                />                
-                <BoxProject 
-                    image = {world}
-                    link = 'https://animate.style/'
-                    title = 'Work 02'
-                    desc = 'Proyecto realizado'
-                />                
-                <BoxProject 
-                    image = {world2}
-                    link = 'https://animate.style/'
-                    title = 'Work 03'
-                    desc = 'Proyecto realizado otra vez'
-                />                
+                    image = {sendme}
+                    link = 'https://sendme-project.herokuapp.com/'
+                    title = 'SendME'
+                    desc = 'Sending information, client server through SocketIO.'
+                    desc2 = 'Developed with Javascript in NodeJs and React.'
+                    desc3 = 'Start from administrator with the user "admin" and password "12345" to send the information to the other users. Or register to enter as a user and receive the information.'
+                />              
             </div>
         </div>
     )

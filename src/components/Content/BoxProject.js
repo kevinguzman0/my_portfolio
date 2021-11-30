@@ -7,6 +7,8 @@ const BoxProject = ({ ...props }) => {
                     <div className="con">
                         <h3><a href={`${props.link}`} target="blank">{props.title}</a></h3>
                         <span>{props.desc}</span>
+                        <span>{props.desc2}</span>
+                        <span>{props.desc3}</span>
                     </div>
                 </div>
             </div>

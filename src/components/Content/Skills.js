@@ -7,7 +7,7 @@ const Skills = () => {
             <InformationBasic
                 span='My specialty'
                 h2='My skills'
-                p="The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+                p="In the projects carried out I developed with skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, NodeJS and others, however I have knowledge in other frameworks and languages because I am a self-taught and curious person. I want to continue deepening my knowledge, and learn others, for example, react native and the English language."
             >
             </InformationBasic>
             <div className="row wow animate__animated animate__fadeInRight animate__slow">
@@ -18,22 +18,22 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='CSS3'
-                    porcentaje='70%'
+                    porcentaje='75%'
                     colorbar='#2C98F0'
                 />
                 <BarraSkills
-                    skill='JavaScript'
-                    porcentaje='65%'
+                    skill='Javascript'
+                    porcentaje='70%'
                     colorbar='#FFCB00'
                 />
                 <BarraSkills
                     skill='NodeJS'
-                    porcentaje='60%'
+                    porcentaje='70%'
                     colorbar='#90C53F'
                 />
                 <BarraSkills
                     skill='React'
-                    porcentaje='55%'
+                    porcentaje='70%'
                     colorbar='#4AD5FF'
                 />
                 <BarraSkills
@@ -56,6 +56,37 @@ const Skills = () => {
                     skill='MongoDB'
                     porcentaje='60%'
                     colorbar='#90C53F'
+                />
+                <span className="title-about mt-3">Extra</span>
+                <BarraSkills
+                    skill='Linux'
+                    porcentaje='80%'
+                    colorbar='#FFCB00'
+                />
+                <BarraSkills
+                    skill='Bootstrap'
+                    porcentaje='80%'
+                    colorbar='#5A3A7B'
+                />
+                <BarraSkills
+                    skill='Git'
+                    porcentaje='75%'
+                    colorbar='#E84D31'
+                />
+                <BarraSkills
+                    skill='GitHub'
+                    porcentaje='80%'
+                    colorbar='#161415'
+                />
+                <BarraSkills
+                    skill='Azure DevOps'
+                    porcentaje='20%'
+                    colorbar='#0074D0'
+                />
+                <BarraSkills
+                    skill='POO'
+                    porcentaje='85%'
+                    colorbar='#00A8E0'
                 />
 
             </div>

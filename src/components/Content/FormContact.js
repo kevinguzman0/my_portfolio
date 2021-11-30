@@ -2,9 +2,21 @@ import InputForm from './InputForm'
 import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 
+import { useAlert } from 'react-alert'
+
+
 const FormContact = () => {
-    const form = useRef();
+    
+    const alert = useAlert()
+    
     const [envio, setEnvio] = useState(false)
+    const form = useRef();
+
+    const activeAlert = () => {
+        if (envio) {
+            alert.show('Mail sent, thank you!')            
+        }
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,7 +35,6 @@ const FormContact = () => {
 
     return (
         <div className="row content-contact wow animate__animated animate__fadeInRight animate__slow">
-            {envio ? <div className="alert alert-primary alert-form" role="alert">Mail sent, thank you.</div> : null}
             <form ref={form} onSubmit={sendEmail} className="form-contact">
                 <InputForm
                     type='text'
@@ -53,7 +64,8 @@ const FormContact = () => {
                 </div>
                 <div className="col-md-12">
                     <div className="form-group">
-                        <button type="submit" value="Send Message" className="btn btn-primary">Send Message</button>
+                        <button type="submit" className="btn btn-primary" onClick={() => {
+                            activeAlert()}}>Send Message</button>
                     </div>
                 </div>
             </form>

@@ -1,5 +1,5 @@
 import React from "react"
-import logo from '../../img/img_avatar.png'
+import logo from '../../img/logo.jpg'
 
 import ItemsMenu from './ItemsMenu'
 import FooterNav from './FooterNav'

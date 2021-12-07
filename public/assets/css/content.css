@@ -40,7 +40,9 @@ a {
 
 .title-home .download-cv {
     color: #fff;
-    border: 1px solid #fff;
+    font-weight: bold;
+    border: 3px solid #fff;
+    border-radius: 8px;
     background: transparent !important;
     transition: all 0.5s;
 }

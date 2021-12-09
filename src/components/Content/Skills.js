@@ -7,7 +7,7 @@ const Skills = () => {
             <InformationBasic
                 span='My specialty'
                 h2='My skills'
-                p="In the projects carried out I developed with skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, NodeJS and others, however I have knowledge in other frameworks and languages because I am a self-taught and curious person. I want to continue deepening my knowledge, and learn others, for example, react native and the English language."
+                p="In the projects carried out I developed skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, NodeJS and others, however I have ability in other frameworks and languages. I want to continue deepening my knowledge, learn other technologies such as React Native and improve the English language."
             >
             </InformationBasic>
             <div className="row wow animate__animated animate__fadeInRight animate__slow">

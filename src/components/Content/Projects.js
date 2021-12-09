@@ -2,6 +2,7 @@ import InformationBasic from './InformationBasic'
 import BoxProject from './BoxProject'
 
 import sendme from "../../img/sendme.png";
+import team from "../../img/team.png";
 
 const Projects = () => {
     return (
@@ -18,8 +19,12 @@ const Projects = () => {
                     title = 'SendME'
                     desc = 'Sending information, client server through SocketIO.'
                     desc2 = 'Developed with Javascript in NodeJs and React.'
-                    desc3 = 'Start from administrator with the user "admin" and password "12345" to send the information to the other users. Or register to enter as a user and receive the information.'
-                />              
+                /> 
+                <BoxProject 
+                    image = {team}
+                    link = 'https://kevinteamanager.herokuapp.com/'
+                    title = 'Teamanager'
+                    desc = 'Developed in React with Redux'                />              
             </div>
         </div>
     )

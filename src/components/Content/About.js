@@ -6,7 +6,7 @@ const About = () => {
             <InformationBasic 
                 span='About Me'
                 h2='Who Am I?'
-                p="I was born in Bogota-Colombia, I characterize myself for being responsable, efficent and working as a team, I'm also a person who spends his time, studying, exercising and looking for new things to learn. I have worked on several projects with various technologies, now I want to focus on full stack development with Javascript."
+                p="I was born in Bogotá-Colombia, I am characterized by being responsible, efficient and working as a team, I am also a person who dedicates his time to studying, exercising and looking for new things to learn. I have worked on several projects with various technologies, now I want to focus on fullStack development with Javascript."
                 >
             </InformationBasic>
             

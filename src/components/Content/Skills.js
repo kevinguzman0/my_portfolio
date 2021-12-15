@@ -7,7 +7,7 @@ const Skills = () => {
             <InformationBasic
                 span='My specialty'
                 h2='My skills'
-                p="In the projects carried out I developed skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, NodeJS and others, however I have ability in other frameworks and languages. I want to continue deepening my knowledge, learn other technologies such as React Native and improve the English language."
+                p="In the projects carried out I developed skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, React-Native, NodeJS and others, however I have ability in other frameworks and languages. I want to continue deepening my knowledge, learn other technologies and improve the English language."
             >
             </InformationBasic>
             <div className="row wow animate__animated animate__fadeInRight animate__slow">
@@ -22,7 +22,7 @@ const Skills = () => {
                     colorbar='#2C98F0'
                 />
                 <BarraSkills
-                    skill='Javascript'
+                    skill='JavaScript'
                     porcentaje='70%'
                     colorbar='#FFCB00'
                 />
@@ -33,12 +33,12 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='React'
-                    porcentaje='70%'
+                    porcentaje='65%'
                     colorbar='#4AD5FF'
                 />
                 <BarraSkills
                     skill='React Native'
-                    porcentaje='10%'
+                    porcentaje='60%'
                     colorbar='#4AD5FF'
                 />
                 <span className="title-about mt-3">Databases</span>

@@ -14,7 +14,7 @@ function Navbar({ open }) {
             </div>
             <div className="presentation">
                 <h4 style={{ fontWeight: 'bold' }}>Kevin Guzman</h4>
-                <h6><a href="https://bootcamp.learn.utoronto.ca/blog/what-is-a-full-stack-developer/" target="blank">Full Stack Javascript Developer</a></h6>
+                <h6><a href="https://bootcamp.learn.utoronto.ca/blog/what-is-a-full-stack-developer/" target="blank">Full Stack JavaScript Developer</a></h6>
             </div>
             <div className="menu">
                 <ItemsMenu class={stylesItem} to={`#content-home`}>Home</ItemsMenu>

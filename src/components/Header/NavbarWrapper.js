@@ -6,6 +6,7 @@ export const NavbarWrapper = styled.nav`
   justify-content: flex-start;
   align-items: center;
   position: fixed;
+  -webkit-mask-position: fixed;
   top: 10vh;
   left: ${props => (props.open ? "0" : "-100%")};
   width: 100%;

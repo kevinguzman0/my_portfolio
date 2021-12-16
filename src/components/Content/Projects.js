@@ -4,6 +4,7 @@ import BoxProject from './BoxProject'
 import sendme from "../../img/sendme.png";
 import team from "../../img/team.png";
 import food from "../../img/food.jpg";
+import todos from "../../img/todos.png";
 
 const Projects = () => {
     return (
@@ -19,7 +20,7 @@ const Projects = () => {
                     link='https://sendme-project.herokuapp.com/'
                     title='SendME'
                     desc='Sending information, client server through SocketIO'
-                    desc2='Developed with Javascript in NodeJs and React'
+                    desc2='Developed in NodeJs and React with MongoDB'
                 />
                 <BoxProject
                     image={team}
@@ -33,7 +34,14 @@ const Projects = () => {
                     link='https://github.com/kevinguzman0/order_food'
                     title='FoodOrder'
                     desc='Enter and ask your order'
-                    desc2='Developed in React Native'
+                    desc2='Developed in React Native and connected to API NodeJS with Firebase'
+                />
+                <BoxProject
+                    image={todos}
+                    link='https://github.com/kevinguzman0/add_todos.git'
+                    title='AddTodos'
+                    desc='Create list of todos'
+                    desc2='Developed in React Native with Redux'
                 />
                 
             </div>

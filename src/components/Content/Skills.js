@@ -38,7 +38,7 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='React Native'
-                    porcentaje='60%'
+                    porcentaje='50%'
                     colorbar='#4AD5FF'
                 />
                 <span className="title-about mt-3">Databases</span>

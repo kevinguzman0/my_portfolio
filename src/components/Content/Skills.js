@@ -7,7 +7,7 @@ const Skills = () => {
             <InformationBasic
                 span='My specialty'
                 h2='My skills'
-                p="In the projects carried out I developed skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, React, React-Native, NodeJS and others, however I have ability in other frameworks and languages. I want to continue deepening my knowledge, learn other technologies and improve the English language."
+                p="In the projects carried out I developed skills in HTML, CSS and JavaScript, Git, Bootstrap, MySQL, MongoDB, PostgreSQL, React, React-Native, NodeJS. I want to continue deepening my knowledge, learn other technologies and abilities."
             >
             </InformationBasic>
             <div className="row wow animate__animated animate__fadeInRight animate__slow">
@@ -18,7 +18,7 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='CSS3'
-                    porcentaje='75%'
+                    porcentaje='80%'
                     colorbar='#2C98F0'
                 />
                 <BarraSkills
@@ -33,12 +33,12 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='React'
-                    porcentaje='65%'
+                    porcentaje='70%'
                     colorbar='#4AD5FF'
                 />
                 <BarraSkills
                     skill='React Native'
-                    porcentaje='50%'
+                    porcentaje='75%'
                     colorbar='#4AD5FF'
                 />
                 <span className="title-about mt-3">Databases</span>
@@ -70,23 +70,8 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='Git'
-                    porcentaje='75%'
-                    colorbar='#E84D31'
-                />
-                <BarraSkills
-                    skill='GitHub'
                     porcentaje='80%'
-                    colorbar='#161415'
-                />
-                <BarraSkills
-                    skill='Azure DevOps'
-                    porcentaje='20%'
-                    colorbar='#0074D0'
-                />
-                <BarraSkills
-                    skill='POO'
-                    porcentaje='85%'
-                    colorbar='#00A8E0'
+                    colorbar='#E84D31'
                 />
 
             </div>

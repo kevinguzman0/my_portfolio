@@ -18,7 +18,7 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='CSS3'
-                    porcentaje='80%'
+                    porcentaje='75%'
                     colorbar='#2C98F0'
                 />
                 <BarraSkills
@@ -33,12 +33,12 @@ const Skills = () => {
                 />
                 <BarraSkills
                     skill='React'
-                    porcentaje='70%'
+                    porcentaje='80%'
                     colorbar='#4AD5FF'
                 />
                 <BarraSkills
                     skill='React Native'
-                    porcentaje='75%'
+                    porcentaje='80%'
                     colorbar='#4AD5FF'
                 />
                 <span className="title-about mt-3">Databases</span>
@@ -72,6 +72,11 @@ const Skills = () => {
                     skill='Git'
                     porcentaje='80%'
                     colorbar='#E84D31'
+                />
+                <BarraSkills
+                    skill='TypeScript'
+                    porcentaje='60%'
+                    colorbar='#2f74c0'
                 />
 
             </div>

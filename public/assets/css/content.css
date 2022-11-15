@@ -303,6 +303,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         width: auto;
         float: none;
     }
+
     #content {
         float: none;
         width: 100%;

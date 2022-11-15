@@ -10,7 +10,7 @@ function Navbar({ open }) {
     return (
         <NavbarWrapper open={open} className="bg-primary">
             <div className="cover">
-                <img src={logo} alt="Cover page" width="150" height="150" />
+                <img src={logo} alt="Cover page" />
             </div>
             <div className="presentation">
                 <h4 style={{ fontWeight: 'bold' }}>Kevin Guzman</h4>

@@ -18,6 +18,7 @@ a {
     transition: all 0.5s;
     padding: 0 0;
 }
+
 .bg-primary {
     background-color: var(--grey) !important;
 }
@@ -27,17 +28,20 @@ a {
     padding: 10px 15px;
     text-align: center;
 }
+
 .cover img {
     border-radius: 50%;
     /* filter: grayscale(100%); */
-    height: 180px;
+    height: 160px;
     width: 160px;
     box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.3);
 }
+
 .presentation {
     padding: .875rem 1.25rem;
     text-align: center;
 }
+
 .presentation h6 {
     line-height: 1.8rem;
 }
@@ -46,6 +50,7 @@ a {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .menu a {
     width: max-content;
     font-size: 0.9rem;
@@ -57,11 +62,13 @@ a {
     background-size: 0% 2px;
     transition: 2s cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
+
 .menu a:hover {
     transform: translate(0, 8px) scale(0.8);
     color: #2C98F0;
     background-size: auto 2px;
 }
+
 .menu a::after {
     background-size: auto 2px !important;
     color: #2C98F0 !important;
@@ -74,6 +81,7 @@ a {
     justify-content: center;
     align-items: end;
 }
+
 .footer .social-links a {
     font-size: 18px;
     display: inline-block;
@@ -86,6 +94,7 @@ a {
     height: 36px;
     transition: 0.3s;
 }
+
 .footer .social-links a:hover {
     background-color: #2C98F0;
     color: #fff;

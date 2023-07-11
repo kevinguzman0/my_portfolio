@@ -4,30 +4,26 @@ import BarraSkills from "./BarraSkills";
 const Skills = () => {
   const basicSkillsData = [
     {
-      name: "HTML5",
+      name: "HTML",
       porcent: "80%",
       color: "#FF7D00",
     },
     {
-      name: "CSS3",
-      porcent: "75%",
+      name: "CSS",
+      porcent: "80%",
       color: "#2C98F0",
     },
     {
       name: "JavaScript",
-      porcent: "70%",
+      porcent: "80%",
       color: "#FFCB00",
     },
     {
       name: "TypeScript",
-      porcent: "55%",
+      porcent: "50%",
       color: "#2f74c0",
     },
-    {
-      name: "NodeJS",
-      porcent: "70%",
-      color: "#90C53F",
-    },
+
     {
       name: "React",
       porcent: "80%",
@@ -35,8 +31,13 @@ const Skills = () => {
     },
     {
       name: "React Native",
-      porcent: "80%",
+      porcent: "70%",
       color: "#4AD5FF",
+    },
+    {
+      name: "Expo",
+      porcent: "80%",
+      color: "#000",
     },
     {
       name: "Jest",
@@ -45,29 +46,21 @@ const Skills = () => {
     },
   ];
 
-  const databasesSkillsData = [
+  const extraSkillsData = [
+    {
+      name: "NodeJS",
+      porcent: "70%",
+      color: "#90C53F",
+    },
     {
       name: "MySQL",
       porcent: "70%",
       color: "#FF7D00",
     },
     {
-      name: "PostgreSQL",
-      porcent: "60%",
-      color: "#2C98F0",
-    },
-    {
       name: "MongoDB",
-      porcent: "60%",
+      porcent: "70%",
       color: "#90C53F",
-    },
-  ];
-
-  const extraSkillsData = [
-    {
-      name: "Linux",
-      porcent: "80%",
-      color: "#FFCB00",
     },
     {
       name: "Git",
@@ -81,20 +74,12 @@ const Skills = () => {
       <InformationBasic
         span="My specialty"
         h2="My skills"
-        p="In the projects carried out I developed skills in HTML, CSS, JavaScript, TypeScript, React, React Native, NodeJS, Jest, Git, MySQL, MongoDB, PostgreSQL. I want to continue deepening my knowledge, learn other technologies and abilities."
+        p="As a frontend developer, I possess a strong skill set in core technologies like HTML, CSS, and JavaScript. I am proficient in popular frameworks such as React and React Native. Additionally, I have expertise in TypeScript for building robust applications with enhanced code quality and Jest for reliable testing. With a keen eye for detail and a dedication to delivering high-quality projects, I create seamless user experiences. Let's collaborate to create outstanding digital experiences together."
       ></InformationBasic>
       <div className="row wow animate__animated animate__fadeInRight animate__slow">
-        {basicSkillsData.map((e, i) => (
-          <BarraSkills
-            key={i}
-            skill={e.name}
-            porcentaje={e.porcent}
-            colorbar={e.color}
-          />
-        ))}
+        <span className="title-about mt-3">Front-End</span>
 
-        <span className="title-about mt-3">Databases</span>
-        {databasesSkillsData.map((e, i) => (
+        {basicSkillsData.map((e, i) => (
           <BarraSkills
             key={i}
             skill={e.name}

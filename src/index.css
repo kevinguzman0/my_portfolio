@@ -1,5 +1,5 @@
 :root {
-  --primary: #000;
+  --primary: #2c98f0;
   --light: #ffffff;
   ---grey: #f2f3f7;
 }
@@ -7,8 +7,7 @@ body {
   overflow: auto;
   font-family: "Spartan", sans-serif;
   font-weight: 300;
-  color: var(--primary);
-  /* background-color: #0e1215; */
+  color: #000;
 }
 #container-wrap {
   max-width: 1170px;

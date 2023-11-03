@@ -1,9 +1,16 @@
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 
 const ItemsMenu = ({ children, ...props }) => {
-    return (
-        <Link smooth to={props.to ? props.to : ''} className={props.class}>{children}</Link>
-    )
-}
+  return (
+    <Link
+      smooth
+      to={props.to ? props.to : ""}
+      onClick={props.onClick}
+      className={props.class}
+    >
+      {children}
+    </Link>
+  );
+};
 
-export default ItemsMenu
+export default ItemsMenu;

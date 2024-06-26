@@ -1,49 +1,116 @@
+import { useRef, useState } from "react";
+
 import InformationBasic from "./InformationBasic";
-import BoxProject from "./BoxProject";
 
-// import sendme from "../../img/sendme.png";
-// import team from "../../img/team.png";
-import ripit from "../../img/ripit.png";
-import active from "../../img/active.png";
+import { FaGithub, FaApple } from "react-icons/fa";
+import { FcAndroidOs } from "react-icons/fc";
+import {
+  videosReactNativeProjects,
+  videosSwiftProjects,
+} from "../../extra/dataProjects";
+import IconInfoProject from "./iconInfoProject";
 
-const Projects = () => {
-  const projectsReactNative = [
+const Video = ({ index, video }) => {
+  const [iconoActivo, setIconoActivo] = useState(null);
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = (nombreIcono) => setIconoActivo(nombreIcono);
+
+  const handleMouseLeave = () => setIconoActivo(null);
+
+  const openLink = (link) => window.open(link, "_blank");
+
+  const iconsPublic = [
     {
-      image: ripit,
-      link: "https://github.com/KevinDev90/ripit",
-      github: "https://github.com/KevinDev90/ripit",
-      title: "RIPIT",
-      description1: "Practice your english with AI",
-      description2: "Developed in React Native and Expo",
+      icon: video.linkGithub ? (
+        <FaGithub size={30} onClick={() => openLink(video.linkGithub)} />
+      ) : null,
+      background: "transparent",
     },
     {
-      image: active,
-      link: "https://play.google.com/store/apps/details?id=com.denspalm.activemarket",
-      title: "ActiveMarket",
-      description1: "Join companies with influencers",
-      description2: "Development and collaboration with React Native and Expo",
+      icon: video.linkAndroid ? (
+        <FcAndroidOs size={36} onClick={() => openLink(video.linkAndroid)} />
+      ) : null,
+      background: "transparent",
+    },
+    {
+      icon: video.linkIOS ? (
+        <FaApple size={28} onClick={() => openLink(video.linkIOS)} />
+      ) : null,
+      background: "transparent",
     },
   ];
 
+  return (
+    <div key={index} className="col-md-4 mb-4 video-container">
+      <span className="title-about">{video.title}</span>
+      <video
+        ref={videoRef}
+        src={video.resource}
+        autoplay={true}
+        loop={true}
+        width="100%"
+        height="400"
+        className={`video`}
+        controls
+      />
+
+      <div className="iconos-container">
+        {video.techologies.map((e) => (
+          <IconInfoProject
+            item={{
+              icon: e.icon,
+              name: e.name,
+              color: e.background,
+            }}
+            visible={!iconoActivo || iconoActivo === e.name}
+            onMouseEnter={() => handleMouseEnter(e.name)}
+            onMouseLeave={handleMouseLeave}
+          />
+        ))}
+      </div>
+
+      <hr style={{ width: "190px" }} />
+      <div className="iconos-container">
+        {iconsPublic.map(
+          (e) =>
+            e.icon && (
+              <IconInfoProject
+                item={{
+                  icon: e.icon,
+                  name: e.name,
+                  color: e.background,
+                }}
+                visible={true}
+                onMouseEnter={() => {}}
+                onMouseLeave={() => {}}
+              />
+            )
+        )}
+      </div>
+    </div>
+  );
+};
+
+const Projects = () => {
   return (
     <div>
       <InformationBasic span="my work" h2="my projects" />
 
       <div className="row wow animate__animated animate__fadeInUp animate__slow">
-        <span className="title-about mt-3">React Native</span>
-        {projectsReactNative.map((e, i) => (
-          <BoxProject
-            key={i}
-            image={e.image}
-            link={e.link}
-            github={e.github}
-            title={e.title}
-            desc={e.description1}
-            desc2={e.description2}
-          />
-        ))}
+        {/* <span className="title-about mt-3">React Native</span> */}
+        <div className="row">
+          {videosReactNativeProjects.map((video, index) => (
+            <Video key={index} index={index} video={video} />
+          ))}
+        </div>
 
-        <span className="title-about mt-3">Swift</span>
+        {/* <span className="title-about mt-3">Swift</span> */}
+        <div className="row">
+          {videosSwiftProjects.map((video, index) => (
+            <Video key={index} index={index} video={video} />
+          ))}
+        </div>
       </div>
     </div>
   );

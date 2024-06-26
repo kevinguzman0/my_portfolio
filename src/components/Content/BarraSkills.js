@@ -1,13 +1,39 @@
-const BarraSkills = ({...props}) => {
-    return (
-        <div className="col-md-6">
-            <div className="progress-skills">
-                <h4>{props.skill}</h4>
-                <div className="progress" style={{ height: '5px' }}>
-                    <div className="progress-bar wow animate__animated animate__slideInLeft animate__slow" role="progressbar" style={{ width: `${props.porcentaje}`, backgroundColor: `${props.colorbar}` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
+const BarraSkills = ({ ...props }) => {
+  return (
+    <div
+      className="col-md-6"
+      style={{ marginTop: "10px", marginBottom: "10px" }}
+    >
+      <div className="progress-skills">
+        <h4>{props.skill}</h4>
+        <div className="progress" style={{ height: "18px" }}>
+          <div
+            className="progress-bar wow animate__animated animate__slideInLeft animate__slow"
+            role="progressbar"
+            style={{
+              width: `${props.porcentaje}`,
+              backgroundColor: `${props.colorbar}`,
+              alignItems: "center",
+              justifyContent: "center",
+              justifyItems: "center",
+            }}
+            aria-valuenow={props.porcentaje}
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <h4
+              style={{
+                fontSize: "10px",
+                marginTop: "10px",
+                fontWeight: "bold",
+              }}
+            >
+              {props.porcentaje}
+            </h4>
+          </div>
         </div>
-    )
-}
-export default BarraSkills
+      </div>
+    </div>
+  );
+};
+export default BarraSkills;

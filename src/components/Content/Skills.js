@@ -14,6 +14,28 @@ const Skills = () => {
       color: "#000",
     },
     {
+      name: "JavaScript y ES6",
+      porcent: "80%",
+      color: "#FFCB00",
+    },
+    {
+      name: "TypeScript",
+      porcent: "80%",
+      color: "#2f74c0",
+    },
+
+    {
+      name: "Swift",
+      porcent: "60%",
+      color: "#fa4d2b",
+    },
+    {
+      name: "Kotlin",
+      porcent: "50%",
+      color: "#0095d5",
+    },
+
+    {
       name: "Redux toolkit",
       porcent: "80%",
       color: "#744cbb",
@@ -23,43 +45,46 @@ const Skills = () => {
       porcent: "55%",
       color: "#813754",
     },
-    {
-      name: "JavaScript y ES6",
-      porcent: "80%",
-      color: "#FFCB00",
-    },
-    {
-      name: "TypeScript",
-      porcent: "50%",
-      color: "#2f74c0",
-    },
-  ];
 
-  const ios = [
     {
-      name: "Swift",
+      name: "CI/CD",
+      porcent: "60%",
+      color: "#000",
+    },
+    {
+      name: "Jira",
       porcent: "70%",
-      color: "#fa4d2b",
+      color: "#0052cc",
     },
     {
-      name: "SwiftUI",
-      porcent: "65%",
-      color: "#4bb1dc",
+      name: "Scrum",
+      porcent: "70%",
+      color: "#000",
     },
     {
-      name: "UIKit",
-      porcent: "65%",
-      color: "#4bb1dc",
+      name: "Git",
+      porcent: "80%",
+      color: "#f34f29",
     },
     {
-      name: "Core Data",
-      porcent: "65%",
-      color: "#2f74c0",
+      name: "GitHub",
+      porcent: "80%",
+      color: "#000",
     },
     {
-      name: "XCTest",
-      porcent: "50%",
-      color: "#fa4d2b",
+      name: "GitLab",
+      porcent: "80%",
+      color: "#fca326",
+    },
+    {
+      name: "Firebase",
+      porcent: "80%",
+      color: "#FFCA28",
+    },
+    {
+      name: "GraphQL",
+      porcent: "60%",
+      color: "#E535AB",
     },
   ];
 
@@ -67,19 +92,8 @@ const Skills = () => {
     <div>
       <InformationBasic span="My specialty" h2="My skills"></InformationBasic>
       <div className="row wow animate__animated animate__fadeInRight animate__slow">
-        <span className="title-about">Android and IOS Development</span>
-
+        {/* <span className="title-about">Android and IOS Development</span> */}
         {basicSkillsData.map((e, i) => (
-          <BarraSkills
-            key={i}
-            skill={e.name}
-            porcentaje={e.porcent}
-            colorbar={e.color}
-          />
-        ))}
-
-        <span className="title-about mt-3">IOS Development</span>
-        {ios.map((e, i) => (
           <BarraSkills
             key={i}
             skill={e.name}

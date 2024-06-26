@@ -247,7 +247,7 @@ a {
   border: none;
   background: #f2f3f7;
   height: 54px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   transition: 0.3s;
   border-radius: 0;
@@ -298,6 +298,67 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.video-container {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+.video {
+  border-radius: 30px;
+  background: black;
+  width: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.video-container:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+}
+
+.iconos-container {
+  display: flex;
+  width: 190px;
+  flex-wrap: wrap; /* Esta línea permite que los elementos se envuelvan a la siguiente fila */
+  justify-content: center; /* Esto centra los elementos horizontalmente */
+}
+
+.icono-container {
+  position: relative;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.icono-container:not(.mostrar) {
+  opacity: 0;
+}
+
+.nombre {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(10px, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.icono-container.mostrar:hover .nombre {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
 @media only screen and (max-width: 624px) {
   #header {
     width: auto;
@@ -312,8 +373,34 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media only screen and (max-width: 1050px) {
-  .content-box-project {
-    width: 100% !important;
+@media (min-width: 510px) {
+  .video-container {
+    width: calc(
+      50% - 10px
+    ); /* Dos elementos por fila, con un espacio de 10px entre ellos */
+  }
+}
+
+@media (min-width: 600px) {
+  .video-container {
+    width: calc(
+      100% - 10px
+    ); /* Tres elementos por fila, con un espacio de 10px entre ellos */
+  }
+}
+
+@media (min-width: 800px) {
+  .video-container {
+    width: calc(
+      50% - 10px
+    ); /* Tres elementos por fila, con un espacio de 10px entre ellos */
+  }
+}
+
+@media (min-width: 992px) {
+  .video-container {
+    width: calc(
+      33.3% - 10px
+    ); /* Cuatro elementos por fila, con un espacio de 10px entre ellos */
   }
 }

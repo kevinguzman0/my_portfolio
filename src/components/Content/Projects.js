@@ -4,10 +4,7 @@ import InformationBasic from "./InformationBasic";
 
 import { FaGithub, FaApple } from "react-icons/fa";
 import { FcAndroidOs } from "react-icons/fc";
-import {
-  videosReactNativeProjects,
-  videosSwiftProjects,
-} from "../../extra/dataProjects";
+import { videosSwiftProjects } from "../../extra/dataProjects";
 import IconInfoProject from "./iconInfoProject";
 
 const Video = ({ index, video }) => {
@@ -56,7 +53,7 @@ const Video = ({ index, video }) => {
       />
 
       <div className="iconos-container">
-        {video.techologies.map((e) => (
+        {video.technologies.map((e) => (
           <IconInfoProject
             item={{
               icon: e.icon,
@@ -98,14 +95,6 @@ const Projects = () => {
       <InformationBasic span="my work" h2="my projects" />
 
       <div className="row wow animate__animated animate__fadeInUp animate__slow">
-        {/* <span className="title-about mt-3">React Native</span> */}
-        <div className="row">
-          {videosReactNativeProjects.map((video, index) => (
-            <Video key={index} index={index} video={video} />
-          ))}
-        </div>
-
-        {/* <span className="title-about mt-3">Swift</span> */}
         <div className="row">
           {videosSwiftProjects.map((video, index) => (
             <Video key={index} index={index} video={video} />

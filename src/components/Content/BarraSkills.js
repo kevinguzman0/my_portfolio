@@ -11,13 +11,13 @@ const BarraSkills = ({ ...props }) => {
             className="progress-bar wow animate__animated animate__slideInLeft animate__slow"
             role="progressbar"
             style={{
-              width: `${props.porcentaje}`,
+              width: `${props.percentaje}`,
               backgroundColor: `${props.colorbar}`,
               alignItems: "center",
               justifyContent: "center",
               justifyItems: "center",
             }}
-            aria-valuenow={props.porcentaje}
+            aria-valuenow={props.percentaje}
             aria-valuemin="0"
             aria-valuemax="100"
           >
@@ -28,7 +28,7 @@ const BarraSkills = ({ ...props }) => {
                 fontWeight: "bold",
               }}
             >
-              {props.porcentaje}
+              {props.percentaje}
             </h4>
           </div>
         </div>

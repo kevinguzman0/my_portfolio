@@ -19,7 +19,7 @@ const Home = () => {
           </CarouselItem>
           <CarouselItem active="" src={carousel3}>
             <h1>
-              Mobile
+              IOS
               <br />
               Developer
             </h1>

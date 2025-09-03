@@ -36,7 +36,7 @@ function Navbar({ open, setOpen }) {
       </div>
       <div className="presentation">
         <h4 style={{ fontWeight: "bold" }}>Kevin Guzman</h4>
-        <h6 style={{ color: "#2C98F0" }}>Mobile Developer</h6>
+        <h6 style={{ color: "#2C98F0" }}>IOS Developer</h6>
       </div>
       <div className="menu">
         {options.map((e, i) => (
